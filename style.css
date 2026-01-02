@@ -43,17 +43,17 @@ h2 {
 }
 
 .intro-text {
-  font-size: 1.4rem;
-  line-height: 1.6;
+  font-size: 1.7rem; /* légèrement augmenté */
+  line-height: 1.7;
   margin-bottom: 40px;
   color: var(--off-white);
-  opacity: 0.9;
+  opacity: 0.95;
   text-align: justify;
 }
 
 .intro-text p,
 .final-message p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
   text-indent: 40px;
 }
 
@@ -74,7 +74,7 @@ h2 {
 .contact-msg {
   margin-top: 20px;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem; /* un peu plus gros */
   opacity: 0.95;
   text-indent: 0 !important;
 }
@@ -169,7 +169,7 @@ audio::-webkit-media-controls-play-button {
 }
 
 .tick-text {
-  font-size: 1.7rem;
+  font-size: 1.7rem; /* légèrement agrandi */
   line-height: 1.4;
   color: var(--off-white);
   text-align: center;
@@ -180,12 +180,13 @@ audio::-webkit-media-controls-play-button {
 input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
-  height: 8px;
+  height: 8px; /* ligne fine */
   background: var(--off-white);
   border-radius: 10px;
   outline: none;
 }
 
+/* Thumb du slider Desktop */
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -200,13 +201,35 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]::-moz-range-thumb {
-  width: 45px;
-  height: 45px;
+  width: 28px;
+  height: 28px;
   background: var(--thumb-color, #8a46e5) !important;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 15px var(--thumb-color, #8a46e5);
+}
+
+/* Thumb du slider Mobile */
+@media (max-width: 600px) {
+  input[type="range"]::-webkit-slider-thumb {
+    width: 45px;
+    height: 45px;
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 45px;
+    height: 45px;
+  }
+  .tick-text {
+    font-size: 1.3rem; /* plus lisible sur mobile */
+  }
+  .tick-group {
+    width: 90px;
+  }
+  button {
+    font-size: 2rem;
+    padding: 18px 35px;
+  }
 }
 
 /* ==========================================
@@ -217,10 +240,9 @@ input[type="range"]::-moz-range-thumb {
   font-weight: bold;
   min-height: 30px;
   margin: 20px 0;
-  font-size: 1.8rem; 
-  font-size: 1.8rem; 
+  font-size: 1.9rem;
+  text-align: center;
 }
-
 
 .controls {
   display: flex;
@@ -230,8 +252,8 @@ input[type="range"]::-moz-range-thumb {
 
 button {
   font-family: "OCR A Std", monospace;
-  font-size: 1.5rem;       
-  padding: 20px 40px;  
+  font-size: 1.7rem;
+  padding: 12px 25px; /* réduit pour desktop */
   cursor: pointer;
   border: 2px solid var(--light-purple);
   background: transparent;
@@ -248,24 +270,5 @@ button:hover {
   text-indent: 0 !important;
   text-align: center;
   margin-top: 10px;
-  font-size: 1.4rem;
+  font-size: 1.7rem; /* légèrement plus gros pour tous */
 }
-
-/* ==========================================
-   7. RESPONSIVE DESIGN
-   ========================================== */
-@media (max-width: 600px) {
-  .tick-text {
-    font-size: 1.2rem;
-  }
-  .tick-group {
-    width: 90px;
-  }
-}
-
-
-
-
-
-
-
