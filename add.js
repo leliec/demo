@@ -61,7 +61,7 @@ function init() {
   const reminderContainer = document.getElementById("reminder-container");
   if (reminderContainer) {
     reminderContainer.innerHTML = `
-      <p>Évaluez 5 nouveaux sons en cliquant sur « Continuer » ou bien terminez ce sondage en sélectionnant « Soumettre et quitter ». Merci pour votre participation !</p>
+      <p>Évaluez 5 nouveaux sons en cliquant sur « Continuer » ou bien terminez ce sondage en sélectionnant « Soumettre et quitter ».</p>
     `;
   }
 
@@ -258,3 +258,4 @@ submitBtn.addEventListener("click", async () => {
 });
 
 init();
+
