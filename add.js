@@ -248,7 +248,7 @@ submitBtn.addEventListener("click", async () => {
         SESSION TERMINÉE. MERCI POUR VOTRE CONTRIBUTION !
       </h3>
       <p> Elle sera très utile pour tenter d’expliquer ce qui rend un son créé par synthétiseur virtuel anxiogène, et pour tester si un algorithme de machine learning peut prédire les paramètres d’un son plus angoissant.</p>
-      <p class = "contact-msg">Pour toute question, ou si vous souhaitez recevoir les résultats de l'étude, contactez : <strong>publelue@gmail.com</strong>. <br> </p>
+      <p class = "contact-msg">Pour toute question, ou si vous souhaitez recevoir les résultats de l'étude, contactez <strong>publelue@gmail.com</strong>. <br> </p>
     </div>
   `;
   nextBtn.style.display = "none";
@@ -258,4 +258,5 @@ submitBtn.addEventListener("click", async () => {
 });
 
 init();
+
 
