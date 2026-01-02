@@ -1,0 +1,260 @@
+/* ==========================================
+   1. RESET & GLOBAL STYLES
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "OCR A Std", monospace;
+}
+
+:root {
+  --dark-purple: #540da6;
+  --light-purple: #ac86ef;
+  --off-white: #eadde4;
+  --dark-pink: #0c000b;
+}
+
+body {
+  background-color: var(--dark-pink);
+  color: var(--off-white);
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  font-size: 1.7rem;
+}
+
+/* ==========================================
+   2. LAYOUT & CONTAINERS
+   ========================================== */
+.main-container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* ==========================================
+   3. TYPOGRAPHY & CONTENT
+   ========================================== */
+h2 {
+  color: var(--light-purple);
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.intro-text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: var(--off-white);
+  opacity: 0.9;
+  text-align: justify;
+}
+
+.intro-text p,
+.final-message p {
+  margin-bottom: 1.5rem;
+  text-indent: 40px;
+}
+
+.intro-text .welcome-msg {
+  color: var(--light-purple);
+  font-weight: bold;
+}
+
+.consigne-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--off-white);
+  margin: 40px 0 20px 0;
+  letter-spacing: 2px;
+  text-indent: 0 !important;
+}
+
+.contact-msg {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  opacity: 0.95;
+  text-indent: 0 !important;
+}
+
+#progress {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  color: var(--light-purple);
+}
+
+/* ==========================================
+   4. SOUND BLOCKS & AUDIO
+   ========================================== */
+.sound-block {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--dark-purple);
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.sound-block.error {
+  border: 2px solid #620000ff;
+}
+
+.presentation-label {
+  font-size: 1.8rem;
+  color: var(--light-purple);
+  font-weight: bold;
+}
+
+audio {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  background: #150029;
+  padding: 6px;
+  box-shadow: 0 0 10px rgba(22, 0, 88, 0.3);
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: transparent !important;
+}
+
+audio::-webkit-media-controls-play-button {
+  filter: hue-rotate(190deg) saturate(2);
+}
+
+/* ==========================================
+   5. CUSTOM RANGE SLIDER
+   ========================================== */
+.slider-wrapper {
+  width: 100%;
+  max-width: 650px;
+  margin: 20px 0;
+  padding: 0 15px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.slider-labels {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin-top: 5px;
+}
+
+.tick-group {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110px;
+}
+
+.tick {
+  width: 2px;
+  height: 12px;
+  background-color: var(--off-white);
+  margin-bottom: 8px;
+}
+
+.tick-text {
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: var(--off-white);
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: var(--off-white);
+  border-radius: 10px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: var(--thumb-color, #8a46e5) !important;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 15px var(--thumb-color, #8a46e5);
+  transition: transform 0.1s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: var(--thumb-color, #8a46e5) !important;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 15px var(--thumb-color, #8a46e5);
+}
+
+/* ==========================================
+   6. UI CONTROLS & FEEDBACK
+   ========================================== */
+#errorMessage {
+  color: #620000ff;
+  font-weight: bold;
+  min-height: 30px;
+  margin: 20px 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  font-family: "OCR A Std", monospace;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: 2px solid var(--light-purple);
+  background: transparent;
+  color: var(--light-purple);
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: var(--light-purple);
+  color: var(--dark-pink);
+}
+
+#reminder-container p {
+  text-indent: 0 !important;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+/* ==========================================
+   7. RESPONSIVE DESIGN
+   ========================================== */
+@media (max-width: 600px) {
+  .tick-text {
+    font-size: 0.65rem;
+  }
+  .tick-group {
+    width: 80px;
+  }
+}
