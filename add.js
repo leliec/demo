@@ -251,6 +251,12 @@ submitBtn.addEventListener("click", async () => {
       <p class = "contact-msg">Pour toute question, ou si vous souhaitez recevoir les résultats de l'étude, contactez <strong>publelue@gmail.com</strong>. <br> </p>
     </div>
   `;
+  
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"  
+  });
+  
   nextBtn.style.display = "none";
   submitBtn.style.display = "none";
   progressText.style.display = "none";
@@ -258,5 +264,6 @@ submitBtn.addEventListener("click", async () => {
 });
 
 init();
+
 
 
