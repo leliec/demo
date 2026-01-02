@@ -81,7 +81,7 @@ h2 {
 
 #progress {
   margin-bottom: 30px;
-  font-size: 1.4rem;
+  font-size: 1.65rem;
   color: var(--light-purple);
 }
 
@@ -200,8 +200,8 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]::-moz-range-thumb {
-  width: 28px;
-  height: 28px;
+  width: 45px;
+  height: 45px;
   background: var(--thumb-color, #8a46e5) !important;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -217,6 +217,7 @@ input[type="range"]::-moz-range-thumb {
   font-weight: bold;
   min-height: 30px;
   margin: 20px 0;
+  font-size: 1.8rem; 
 }
 
 .controls {
@@ -253,12 +254,13 @@ button:hover {
    ========================================== */
 @media (max-width: 600px) {
   .tick-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .tick-group {
     width: 90px;
   }
 }
+
 
 
 
