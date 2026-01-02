@@ -218,7 +218,9 @@ input[type="range"]::-moz-range-thumb {
   min-height: 30px;
   margin: 20px 0;
   font-size: 1.8rem; 
+  font-size: 1.8rem; 
 }
+
 
 .controls {
   display: flex;
@@ -260,6 +262,7 @@ button:hover {
     width: 90px;
   }
 }
+
 
 
 
