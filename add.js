@@ -252,10 +252,10 @@ submitBtn.addEventListener("click", async () => {
     </div>
   `;
   
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"  
-  });
+  const finalDiv = document.getElementById("finalMessage");
+  if (finalDiv) {
+    finalDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
   
   nextBtn.style.display = "none";
   submitBtn.style.display = "none";
@@ -264,6 +264,7 @@ submitBtn.addEventListener("click", async () => {
 });
 
 init();
+
 
 
 
