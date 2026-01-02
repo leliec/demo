@@ -228,8 +228,8 @@ input[type="range"]::-moz-range-thumb {
 
 button {
   font-family: "OCR A Std", monospace;
-  font-size: 1.7rem;       
-  padding: 30px 50px;  
+  font-size: 1.5rem;       
+  padding: 20px 40px;  
   cursor: pointer;
   border: 2px solid var(--light-purple);
   background: transparent;
@@ -260,6 +260,7 @@ button:hover {
     width: 90px;
   }
 }
+
 
 
 
