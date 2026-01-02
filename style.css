@@ -81,7 +81,7 @@ h2 {
 
 #progress {
   margin-bottom: 30px;
-  font-size: 1.65rem;
+  font-size: 1.8rem;
   color: var(--light-purple);
 }
 
@@ -228,7 +228,7 @@ input[type="range"]::-moz-range-thumb {
 
 button {
   font-family: "OCR A Std", monospace;
-  font-size: 2.1rem;       
+  font-size: 1.7rem;       
   padding: 30px 50px;  
   cursor: pointer;
   border: 2px solid var(--light-purple);
@@ -260,6 +260,7 @@ button:hover {
     width: 90px;
   }
 }
+
 
 
 
