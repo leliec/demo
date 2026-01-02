@@ -133,7 +133,7 @@ audio::-webkit-media-controls-play-button {
 .slider-wrapper {
   width: 100%;
   max-width: 650px;
-  margin: 30px 0 20px 0;
+  margin: 60px 0 20px 0;
   padding: 0 15px;
 }
 
@@ -169,7 +169,7 @@ audio::-webkit-media-controls-play-button {
 }
 
 .tick-text {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   line-height: 1.4;
   color: var(--off-white);
   text-align: center;
@@ -227,8 +227,8 @@ input[type="range"]::-moz-range-thumb {
 
 button {
   font-family: "OCR A Std", monospace;
-  font-size: 2rem;       
-  padding: 20px 40px;  
+  font-size: 2.3rem;       
+  padding: 30px 50px;  
   cursor: pointer;
   border: 2px solid var(--light-purple);
   background: transparent;
@@ -253,10 +253,11 @@ button:hover {
    ========================================== */
 @media (max-width: 600px) {
   .tick-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .tick-group {
     width: 90px;
   }
 }
+
 
